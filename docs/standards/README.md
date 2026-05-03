@@ -23,6 +23,7 @@ Do not edit by hand.*
 | --- | --- | --- | --- | --- | --- |
 | [acceptance-attestation](acceptance-attestation.md) | Acceptance attestation | draft | 0008 | 2026-05-03 | annually |
 | [commit-discipline](commit-discipline.md) | Commit discipline | draft | 0007 | 2026-05-03 | semi-annually |
+| [compliance-matrix](compliance-matrix.md) | Compliance matrix | draft | 0007, 0008 | 2026-05-03 | semi-annually |
 | [decision-content](decision-content.md) | Decision content | draft | 0001 | 2026-05-03 | semi-annually |
 | [definition-of-done](definition-of-done.md) | Definition of done | draft | 0008 | 2026-05-03 | semi-annually |
 | [integration-discipline](integration-discipline.md) | Integration discipline | draft | 0008 | 2026-05-03 | semi-annually |
