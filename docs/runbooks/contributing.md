@@ -9,6 +9,11 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0001](../decisions/0001-adopt-decisions-as-the-founding-artefact-type.md)
+* [ADR-0007](../decisions/0007-adopt-historical-integrity.md)
+* [ADR-0008](../decisions/0008-adopt-explicit-transition-discipline.md)
 <!-- END-DERIVATION -->
 
 # Contribute to this corpus

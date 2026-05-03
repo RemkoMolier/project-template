@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0007](../decisions/0007-adopt-historical-integrity.md)
 <!-- END-DERIVATION -->
 
 # Versioning substrate
@@ -63,7 +66,7 @@ A contributor force-pushes a rewrite of `main` to remove a controversial commit.
 This is a violation of VS4 because the rewrite is silent and the historical record diverges from what was previously published.
 The correct path for removing problematic content is a revert commit, which is itself part of the record.
 
-### A non-Git substrate (hypothetical supersession)
+### A non-git substrate (hypothetical supersession)
 
 A project chooses Pijul as its substrate.
 Pijul satisfies the three integrity properties (verifiable via patch identifiers, provenanced via patch metadata, identified via authorship).

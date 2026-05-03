@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [integration-discipline](../standards/integration-discipline.md)
 <!-- END-DERIVATION -->
 
 # Review an integration request
@@ -38,15 +41,24 @@ The review happens before merge; no production impact.
    * Confirm it references a work item (per IR1).
    * Read the linked work item for context (acceptance criteria, discussion).
 
-1. Review the code or content. Check for:
+1. Review the code or content.
+  Check for:
 
-   * **Correctness:** does the change do what it claims to do? Are edge cases handled?
-   * **Architecture:** does it fit with the existing design? Does it introduce coupling, duplication, or patterns that conflict with existing code?
-   * **Testing:** are there tests? Do they cover the change and edge cases? Would a regression be caught?
+   * **Correctness:** does the change do what it claims to do?
+  Are edge cases handled?
+   * **Architecture:** does it fit with the existing design?
+  Does it introduce coupling, duplication, or patterns that conflict with existing code?
+   * **Testing:** are there tests?
+  Do they cover the change and edge cases?
+  Would a regression be caught?
    * **Standards compliance:** does the change follow the relevant standards (formatting per `unified-formatting.md`, commit format per `commit-discipline.md`, integration request rules per `integration-discipline.md`, etc.)?
    * **Documentation:** are documentation updates included if the change affects behaviour or APIs (per IR6)?
-   * **Security:** are inputs validated? Are secrets exposed? Are dependencies safe?
-   * **Performance:** any obvious performance issues? N+1 queries? Unnecessary allocations?
+   * **Security:** are inputs validated?
+  Are secrets exposed?
+  Are dependencies safe?
+   * **Performance:** any obvious performance issues?
+  N+1 queries?
+  Unnecessary allocations?
 
 1. Provide feedback.
 

@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0008](../decisions/0008-adopt-explicit-transition-discipline.md)
 <!-- END-DERIVATION -->
 
 # Definition of done

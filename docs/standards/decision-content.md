@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0001](../decisions/0001-adopt-decisions-as-the-founding-artefact-type.md)
 <!-- END-DERIVATION -->
 
 # Decision content
@@ -75,9 +78,10 @@ The `docs/decisions/` folder contains:
 Before drafting a decision, ask:
 
 1. Is this genuinely a separable decision, or am I splitting hairs from an existing one?
-2. Is each element of this decision justified by an actual reason, or am I applying convention reflexively?
-3. Am I deciding the *concept*, or committing to an *instance* of it? If the latter, the concept is the decision; the instance is the cascade.
-4. If this decision recommends building something, have existing solutions been considered in the Considered options section?
+1. Is each element of this decision justified by an actual reason, or am I applying convention reflexively?
+1. Am I deciding the *concept*, or committing to an *instance* of it?
+  If the latter, the concept is the decision; the instance is the cascade.
+1. If this decision recommends building something, have existing solutions been considered in the Considered options section?
 
 If the answer to the first question is "no", fold the content into the existing decision.
 

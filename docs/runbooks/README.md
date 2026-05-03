@@ -17,4 +17,18 @@ Each runbook derives from one or more decisions or standards and operationalises
 ## Runbooks in this folder
 
 <!-- BEGIN-INDEX -->
+*This index is auto-generated from each runbook's frontmatter.
+Do not edit by hand.*
+
+| ID | Title | Status | Derives from | Last reviewed | Last tested |
+| --- | --- | --- | --- | --- | --- |
+| [adopt-this-template](adopt-this-template.md) | Adopt this template | draft | 0008, acceptance-attestation | 2026-05-03 |  |
+| [contributing](contributing.md) | Contribute to this corpus | draft | 0001, 0007, 0008 | 2026-05-03 |  |
+| [develop-a-feature](develop-a-feature.md) | Develop a feature | draft | work-tracking | 2026-05-03 |  |
+| [execute-a-spike](execute-a-spike.md) | Execute a spike | draft | work-tracking | 2026-05-03 |  |
+| [fix-a-bug](fix-a-bug.md) | Fix a bug | draft | work-tracking | 2026-05-03 |  |
+| [land-a-release](land-a-release.md) | Land a release | draft | work-tracking | 2026-05-03 |  |
+| [respond-to-an-incident](respond-to-an-incident.md) | Respond to an incident | draft | work-tracking | 2026-05-03 |  |
+| [review-an-integration-request](review-an-integration-request.md) | Review an integration request | draft | integration-discipline | 2026-05-03 |  |
+| [spike-cascade-handling](spike-cascade-handling.md) | Handle cascade findings during a spike | draft | 0001, decision-content | 2026-05-03 |  |
 <!-- END-INDEX -->

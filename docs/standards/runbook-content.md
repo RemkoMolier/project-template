@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0005](../decisions/0005-adopt-a-runbooks-artefact-for-the-how.md)
 <!-- END-DERIVATION -->
 
 # Runbook content
@@ -108,7 +111,8 @@ That satisfies RC11 because the executor knows the blast radius, permissions, an
 
 ### A runbook that correctly follows RC13 (deprecated with replacement)
 
-> Deprecated. Use [`restore-service-from-backup.md`](restore-service-from-backup.md) instead.
+> Deprecated.
+> Use [`restore-service-from-backup.md`](restore-service-from-backup.md) instead.
 
 This is valid because readers have an explicit next procedure.
 

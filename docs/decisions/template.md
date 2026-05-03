@@ -14,15 +14,15 @@ End with the question this ADR answers.
 
 ## Decision drivers
 
-- The properties the choice must satisfy.
-- The constraints the choice must respect.
-- The audiences the choice must serve.
+* The properties the choice must satisfy.
+* The constraints the choice must respect.
+* The audiences the choice must serve.
 
 ## Considered options
 
-- Option A — brief description.
-- Option B — brief description.
-- Option C — brief description.
+* Option A — brief description.
+* Option B — brief description.
+* Option C — brief description.
 
 ## Decision outcome
 
@@ -34,11 +34,11 @@ If the decision needs further articulation, list the specific commitments here.
 
 ## Consequences
 
-- What this decision enables.
-- What this decision constrains.
-- What follow-up decisions or cascading artefacts this decision implies.
+* What this decision enables.
+* What this decision constrains.
+* What follow-up decisions or cascading artefacts this decision implies.
 
 ## More information
 
-- Cascading artefacts (described by role, not by filename).
-- Related decisions (other ADRs).
+* Cascading artefacts (described by role, not by filename).
+* Related decisions (other ADRs).

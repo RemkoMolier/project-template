@@ -8,6 +8,10 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0007](../decisions/0007-adopt-historical-integrity.md)
+* [ADR-0008](../decisions/0008-adopt-explicit-transition-discipline.md)
 <!-- END-DERIVATION -->
 
 # Work tracking

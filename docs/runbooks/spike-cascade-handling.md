@@ -8,6 +8,10 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0001](../decisions/0001-adopt-decisions-as-the-founding-artefact-type.md)
+* [decision-content](../standards/decision-content.md)
 <!-- END-DERIVATION -->
 
 # Handle cascade findings during a spike
@@ -108,12 +112,12 @@ Do not rewrite Git history (per VS4 in `versioning-substrate.md`).
 
 ## Troubleshooting
 
-### The line between Type 2 and Type 3 is blurry
+### The line between type 2 and type 3 is blurry
 
 When in doubt, ask on the spike work item.
 A second reader can often tell whether the finding is a contradiction (Type 3) or merely an omission (Type 2).
 
-### You're unsure whether the finding is in-scope (Type 1)
+### You're unsure whether the finding is in-scope (type 1)
 
 Apply the reversibility test from AC1 in `decision-content.md`: if you could address the finding independently of the decision, it is not Type 1.
 

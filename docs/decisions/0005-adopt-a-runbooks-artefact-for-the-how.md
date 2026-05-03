@@ -23,19 +23,19 @@ What artefact type captures procedures?
 
 ## Decision drivers
 
-- Procedures must be discoverable when they are needed, often under stress.
-- Procedures must be editable as the underlying systems change, with edits reviewable like any other change to the corpus.
-- The audience matters: a runbook for incident responders looks different from one for new joiners; the format must support both.
-- Procedures must distinguish "written but never executed" from "executed and verified" — the difference matters when relying on a procedure under stress.
-- The artefact type must be parallel in shape to decisions and standards (frontmatter, identifier, lifecycle), so the contributor's mental model stays consistent.
+* Procedures must be discoverable when they are needed, often under stress.
+* Procedures must be editable as the underlying systems change, with edits reviewable like any other change to the corpus.
+* The audience matters: a runbook for incident responders looks different from one for new joiners; the format must support both.
+* Procedures must distinguish "written but never executed" from "executed and verified" — the difference matters when relying on a procedure under stress.
+* The artefact type must be parallel in shape to decisions and standards (frontmatter, identifier, lifecycle), so the contributor's mental model stays consistent.
 
 ## Considered options
 
-- **Procedures as sections inside standards** — every standard carries the procedures that operationalise its rules.
+* **Procedures as sections inside standards** — every standard carries the procedures that operationalise its rules.
   Conflates declarative and sequential content; procedures are not discoverable independently.
-- **Procedures in an external wiki** — procedures live outside the corpus.
+* **Procedures in an external wiki** — procedures live outside the corpus.
   Lifecycle and access model diverge.
-- **Procedures as a dedicated artefact type within the corpus** — first-class artefacts, parallel in shape to decisions and standards.
+* **Procedures as a dedicated artefact type within the corpus** — first-class artefacts, parallel in shape to decisions and standards.
 
 ## Decision outcome
 
@@ -56,14 +56,14 @@ The format conventions, content rules, frontmatter schema, filename pattern, and
 
 ## Consequences
 
-- The corpus has an explicit place for procedures.
+* The corpus has an explicit place for procedures.
   Procedures that are not captured in a runbook are not part of the system; reconstruction from memory under stress is unreliable.
-- A runbook authored under stress (during an incident) can be improved with the benefit of hindsight through a normal integration request after the incident.
-- The `draft` → `active` gate prevents runbooks from being relied upon before they have been verified.
+* A runbook authored under stress (during an incident) can be improved with the benefit of hindsight through a normal integration request after the incident.
+* The `draft` → `active` gate prevents runbooks from being relied upon before they have been verified.
   A reader landing on a `draft` runbook knows the procedure has not been executed.
-- A runbook with a stale `last-tested` date (older than the project's threshold) is a defect to be re-tested or deprecated.
-- New joiners have a procedure to follow rather than depending on shoulder-tapping.
+* A runbook with a stale `last-tested` date (older than the project's threshold) is a defect to be re-tested or deprecated.
+* New joiners have a procedure to follow rather than depending on shoulder-tapping.
 
 ## More information
 
-- Format conventions, content rules, frontmatter schema, filename pattern, and folder placement for runbooks are operationalised in a cascading content standard.
+* Format conventions, content rules, frontmatter schema, filename pattern, and folder placement for runbooks are operationalised in a cascading content standard.

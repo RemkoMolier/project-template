@@ -8,6 +8,10 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0008](../decisions/0008-adopt-explicit-transition-discipline.md)
+* [acceptance-attestation](../standards/acceptance-attestation.md)
 <!-- END-DERIVATION -->
 
 # Adopt this template

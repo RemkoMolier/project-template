@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0009](../decisions/0009-adopt-unified-formatting-across-the-corpus.md)
 <!-- END-DERIVATION -->
 
 # Unified formatting

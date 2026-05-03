@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0008](../decisions/0008-adopt-explicit-transition-discipline.md)
 <!-- END-DERIVATION -->
 
 # Acceptance attestation
@@ -44,9 +47,9 @@ The procedure for executing the acceptance ceremony is operationalised in a runb
 At a high level:
 
 1. The accepting party reads each artefact in the set being accepted.
-2. For each artefact the party either accepts it as-is or supersedes it (introducing a project-specific replacement that supersedes the template's version).
-3. The party flips the `status` of each accepted artefact (`proposed` → `accepted` for decisions; `draft` → `active` for standards).
-4. The party signs the acceptance tag on the commit that includes those status flips.
+1. For each artefact the party either accepts it as-is or supersedes it (introducing a project-specific replacement that supersedes the template's version).
+1. The party flips the `status` of each accepted artefact (`proposed` → `accepted` for decisions; `draft` → `active` for standards).
+1. The party signs the acceptance tag on the commit that includes those status flips.
 
 ## Rationale
 

@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0004](../decisions/0004-adopt-a-standards-artefact-for-the-what.md)
 <!-- END-DERIVATION -->
 
 # Standard content

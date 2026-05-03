@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [work-tracking](../standards/work-tracking.md)
 <!-- END-DERIVATION -->
 
 # Develop a feature

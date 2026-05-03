@@ -7,6 +7,9 @@ derives_from:
 ---
 
 <!-- BEGIN-DERIVATION -->
+**Derives from:**
+
+* [ADR-0007](../decisions/0007-adopt-historical-integrity.md)
 <!-- END-DERIVATION -->
 
 # Commit discipline

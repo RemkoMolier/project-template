@@ -22,21 +22,21 @@ What artefact type captures the rules currently in force?
 
 ## Decision drivers
 
-- Rules need a stable home that contributors and agents can find consistently.
-- Rules must be editable as they evolve, with edits reviewable like any other change to the corpus.
-- Rules must cite the decisions that justify them, so a reader who questions a rule can find its rationale.
-- Rules must be cite-able from other artefacts (other rules, runbooks, integration-request reviews) using stable references.
-- The artefact type must be parallel in shape to the decisions artefact (frontmatter, identifier, lifecycle), so the contributor's mental model stays consistent across layers.
+* Rules need a stable home that contributors and agents can find consistently.
+* Rules must be editable as they evolve, with edits reviewable like any other change to the corpus.
+* Rules must cite the decisions that justify them, so a reader who questions a rule can find its rationale.
+* Rules must be cite-able from other artefacts (other rules, runbooks, integration-request reviews) using stable references.
+* The artefact type must be parallel in shape to the decisions artefact (frontmatter, identifier, lifecycle), so the contributor's mental model stays consistent across layers.
 
 ## Considered options
 
-- **Rules as sections inside decisions** — every decision carries its own rule section.
+* **Rules as sections inside decisions** — every decision carries its own rule section.
   Rules are not separable from rationale; lifecycle conflicts.
-- **Rules as sections inside runbooks** — runbooks carry the rules they enforce.
+* **Rules as sections inside runbooks** — runbooks carry the rules they enforce.
   Rules are not discoverable independently of the procedure that uses them.
-- **External wiki for rules** — rules live outside the corpus.
+* **External wiki for rules** — rules live outside the corpus.
   Lifecycle and access model diverge from the rest of the corpus.
-- **Standards as a dedicated artefact type within the corpus** — first-class artefacts, parallel in shape to decisions.
+* **Standards as a dedicated artefact type within the corpus** — first-class artefacts, parallel in shape to decisions.
 
 ## Decision outcome
 
@@ -55,14 +55,14 @@ The format conventions, content rules, frontmatter schema, filename pattern, and
 
 ## Consequences
 
-- The corpus has an explicit place for rules.
+* The corpus has an explicit place for rules.
   Rules that are not captured in a standard are not part of the system; relying on them is a discipline violation.
-- A standard that drifts from the decision that justifies it is a defect to be caught by review or by the next contributor who applies it.
-- Standards are edited as the rules evolve, but a fundamentally different rule requires deprecation of the old standard and introduction of a new one — the change in approach itself is a decision and is captured as an ADR.
-- The contributor's mental model stays consistent: standards have the same shape as decisions and runbooks (frontmatter, identifier, lifecycle, content rules captured in a cascading content standard).
-- The corpus is small enough to read end-to-end: a mature project typically has tens of standards, not hundreds.
+* A standard that drifts from the decision that justifies it is a defect to be caught by review or by the next contributor who applies it.
+* Standards are edited as the rules evolve, but a fundamentally different rule requires deprecation of the old standard and introduction of a new one — the change in approach itself is a decision and is captured as an ADR.
+* The contributor's mental model stays consistent: standards have the same shape as decisions and runbooks (frontmatter, identifier, lifecycle, content rules captured in a cascading content standard).
+* The corpus is small enough to read end-to-end: a mature project typically has tens of standards, not hundreds.
 
 ## More information
 
-- Format conventions, content rules, frontmatter schema, filename pattern, and folder placement for standards are operationalised in a cascading content standard.
-- The artefact type for the how layer is established in a separate decision.
+* Format conventions, content rules, frontmatter schema, filename pattern, and folder placement for standards are operationalised in a cascading content standard.
+* The artefact type for the how layer is established in a separate decision.
