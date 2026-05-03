@@ -1,0 +1,176 @@
+// markdownlint-cli2 configuration
+// See: https://github.com/DavidAnson/markdownlint-cli2
+// Rules: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+//
+// This file is read by:
+//   - markdownlint-cli2 (CLI)
+//   - vscode-markdownlint (VS Code extension)
+//
+// Derives from: docs/standards/unified-formatting.md
+// Decision:     docs/decisions/0009-adopt-unified-formatting-across-the-corpus.md
+{
+  // Respect .gitignore so gitignored paths are not linted.
+  "gitignore": true,
+
+  // markdownlint-cli2 requires explicit globs when invoked without file args.
+  "globs": [
+    "**/*.md"
+  ],
+
+  // Ignore paths that should not be linted.
+  "ignores": [
+    "node_modules/**",
+    "dist/**",
+    ".adr-cache/**"
+  ],
+
+  // Custom rules (require npm install).
+  "customRules": [
+    "markdownlint-rule-title-case-style",
+    "markdownlint-rule-max-one-sentence-per-line"
+  ],
+
+  "config": {
+    // -------------------------------------------------------------------------
+    // Headings
+    // -------------------------------------------------------------------------
+
+    // MD001 - Heading levels should only increment by one level at a time.
+    "MD001": true,
+
+    // MD003 - Heading style: ATX only (# Heading).
+    "MD003": { "style": "atx" },
+
+    // MD022 - Headings should be surrounded by blank lines.
+    "MD022": true,
+
+    // MD024 - No duplicate headings among siblings (allows same name under different parents).
+    "MD024": { "siblings_only": true },
+
+    // MD025 - Single top-level heading per document.
+    "MD025": true,
+
+    // Sentence case headings (custom rule).
+    // Ignore list: domain terms, acronyms, and proper nouns that should retain their canonical casing.
+    "title-case-style": {
+      "case": "sentence",
+      "ignore": [
+        "ADR",
+        "ADRs",
+        "MADR",
+        "CI",
+        "CD",
+        "CommonMark",
+        "Conventional",
+        "Commits",
+        "YAML",
+        "JSON",
+        "JSONC",
+        "Markdown",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Forgejo",
+        "Husky",
+        "Node.js",
+        "VS",
+        "Code",
+        "project-template",
+        "markdownlint-cli2"
+      ]
+    },
+
+    // -------------------------------------------------------------------------
+    // Lists
+    // -------------------------------------------------------------------------
+
+    // MD004 - Unordered list style: asterisk (*).
+    "MD004": { "style": "asterisk" },
+
+    // MD029 - Ordered list item prefix: always "1." (cleaner diffs on insert/reorder).
+    "MD029": { "style": "one" },
+
+    // MD032 - Lists should be surrounded by blank lines.
+    "MD032": true,
+
+    // -------------------------------------------------------------------------
+    // Code blocks
+    // -------------------------------------------------------------------------
+
+    // MD014 - No leading dollar signs on shell commands without showing output.
+    "MD014": true,
+
+    // MD031 - Fenced code blocks should be surrounded by blank lines.
+    "MD031": true,
+
+    // MD040 - Fenced code blocks should specify a language.
+    "MD040": true,
+
+    // MD046 - Code block style: fenced (not indented).
+    "MD046": { "style": "fenced" },
+
+    // -------------------------------------------------------------------------
+    // Emphasis and inline formatting
+    // -------------------------------------------------------------------------
+
+    // MD049 - Emphasis style: asterisk (*italic*).
+    "MD049": { "style": "asterisk" },
+
+    // MD050 - Strong style: asterisk (**bold**).
+    "MD050": { "style": "asterisk" },
+
+    // -------------------------------------------------------------------------
+    // Whitespace
+    // -------------------------------------------------------------------------
+
+    // MD009 - No trailing spaces.
+    "MD009": true,
+
+    // MD010 - No hard tabs.
+    "MD010": true,
+
+    // MD013 - Line length: disabled (one sentence per line replaces hard wrap).
+    "MD013": false,
+
+    // MD047 - Files should end with a single newline.
+    "MD047": true,
+
+    // One sentence per line (custom rule).
+    "max-one-sentence-per-line": {
+      "line_endings": [".", "?", "!"],
+      "ignored_words": ["ie", "i.e", "eg", "e.g", "etc", "ex", "vs"]
+    },
+
+    // -------------------------------------------------------------------------
+    // Links and HTML
+    // -------------------------------------------------------------------------
+
+    // MD034 - No bare URLs.
+    "MD034": true,
+
+    // MD033 - No inline HTML except <br> and the index/cascade-generator markers.
+    "MD033": {
+      "allowed_elements": ["br"]
+    },
+
+    // MD041 - First line in a file does not need to be a top-level heading
+    //         (frontmatter precedes the H1; auto-generated cascade blockquotes precede the H1 in standards/runbooks).
+    "MD041": false,
+
+    // -------------------------------------------------------------------------
+    // Tables
+    // -------------------------------------------------------------------------
+
+    // MD055 - Table pipe style: leading and trailing.
+    "MD055": { "style": "leading_and_trailing" },
+
+    // MD056 - Table column count: every row must match the header.
+    "MD056": true,
+
+    // MD058 - Tables should be surrounded by blank lines.
+    "MD058": true,
+
+    // MD060 - Table column style: disabled (unaligned tables produce cleaner diffs).
+    "MD060": false
+  }
+}
